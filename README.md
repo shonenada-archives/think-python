@@ -15,5 +15,5 @@ Think Python 中文翻译
 
 ##### 目录
 
- 1. 前言
- 1. 内容列表
+ 1. [前言](preface.md)
+ 1. [内容列表](content.md)
