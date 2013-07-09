@@ -2,9 +2,9 @@ Think Python
 ------------
 
 ### 内容
-  0. [前言](perface.md)
-  1. 编程的方式
-    1. Python 编程语言
+  0. [前言](preface.md)
+  1. [编程的方式](chap1.md#The-way-of-program)
+    1. [Python 编程语言](chap1.md#The-Python-programming-language)
     2. 什么是程序？
     3. 什么是调试？
     4. 形式语言和自然语言
