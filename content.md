@@ -11,10 +11,10 @@ Think Python
       2. [运行时错误](chapter1.md#1.3.2-Runtime-errors)
       3. [语义错误](chapter1.md#1.3.3-Semantic-errors)
       4. [实验调试](chapter1.md#1.3.4-Experimental-debugging)
-    4. 形式语言和自然语言
-    5. 第一个程序
-    6. 调试
-    7. 术语表
+    4. [形式语言和自然语言](chapter1.md#1.4-Formal-and-natural-languages)
+    5. [第一个程序](chapter1.md#1.5-The-first-program)
+    6. [调试](chapter1.md#1.6-Debugging)
+    7. [术语表](chapter1.md#1.7-Glossary)
     8. 练习
   2. 变量、表达式、语句
     1. 变量值与类型
