@@ -200,7 +200,7 @@ _The Media Equation: How People Treat Computers, Television, and New Media Like 
  * __解析(parse)__ ：检查并且分析程序的语句结构。
  * __print 语句(print statement)__ ：一条使 Python 解释器在屏幕上输出值的命令。
 
- ## <a name="1.8-Exercises"></a> 1.8 练习
+## <a name="1.8-Exercises"></a> 1.8 练习
 _练习 1.2_ ：用浏览器登录 Python 官网：[http://python.org](http://python.org). 这个页面包含了一些关于 Python 的信息以及与 Python 相关的链接，同时它还提供了搜索 Python 文档的功能。例如，如果你在搜索窗口里输入 `print` ,搜索结果中的第一条链接就是文档中的 `print` 语句. 虽然搜索结果不是经常对你有作用, 但知道如何使用搜索, 对你始终是有好处的.
 
 _练习 1.3_ ：运行 Python 解释器, 输入 `help()`, 程序将启动在线帮助单元. 你也可以输入 `help("print")` 来获得 `print` 的帮助信息. 如果 `help()` 没有为你提供文档信息, 你可能需要安装 Python 的附加文档. 你可能还需要根据你的系统和 Python 的版本设置环境变量.
