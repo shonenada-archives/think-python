@@ -15,7 +15,7 @@ Think Python
     5. [第一个程序](chapter1.md#1.5-The-first-program)
     6. [调试](chapter1.md#1.6-Debugging)
     7. [术语表](chapter1.md#1.7-Glossary)
-    8. 练习
+    8. [练习](chapter1.md#1.8-Exercises)
   2. 变量、表达式、语句
     1. 变量值与类型
     2. 变量
