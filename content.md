@@ -3,7 +3,7 @@ Think Python
 
 ### 内容
   0. [前言](preface.md)
-  1. [编程方式](chapter1.md#The-way-of-program)
+  1. [编程方式](chapter1.md#1-The-way-of-program)
     1. [Python 编程语言](chapter1.md#1.1-The-Python-programming-language)
     2. [什么是程序？](chapter1.md#1.2-What-is-a-program)
     3. [什么是调试？](chapter1.md#1.3-What-is-debugging)
