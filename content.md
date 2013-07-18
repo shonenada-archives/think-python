@@ -29,10 +29,10 @@ Think Python
     0. 调试
     1. 术语表
     2. 练习
-  3. 函数
-    1. 函数调用
-    2. 类型转换函数
-    3. 数学运算函数
+  3. [函数](chapter3.md#3-Functions)
+    1. [函数调用](chapter3.md#3.1-Function-calls)
+    2. [类型转换函数](chapter3.md#3.2-Type-conversion-functions)
+    3. [数学运算函数](chapter3.md#1.3-Math-functions)
     4. 复合使用
     5. 定义新函数
     6. 定义与调用
