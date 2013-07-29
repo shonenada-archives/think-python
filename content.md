@@ -35,8 +35,8 @@ Think Python
     3. [数学运算函数](chapter3.md#3.3-Math-functions)
     4. [组合使用](chapter3.md#3.4-Composition)
     5. [定义新函数](chapter3.md#3.5-Adding-new-functions)
-    6. 定义与调用
-    7. 流操作
+    6. [定义与调用](chapter3.md#3.6-Definitions-and-uses)
+    7. 执行流
     8. 形式参数与实际参数
     9. 局部变量与局部实参 (Variables and parameters are local)
     0. 栈表
