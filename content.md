@@ -36,10 +36,10 @@ Think Python
     4. [组合使用](chapter3.md#3.4-Composition)
     5. [定义新函数](chapter3.md#3.5-Adding-new-functions)
     6. [定义与调用](chapter3.md#3.6-Definitions-and-uses)
-    7. 执行流
-    8. 形式参数与实际参数
-    9. 局部变量与局部实参 (Variables and parameters are local)
-    0. 栈表
+    7. [执行流](chapter3.md#3.7-Flow-of-execution)
+    8. [形式参数与实际参数](chapter3.md#3.8-Parameters-and-arguments)
+    9. [局部变量与局部实参 (Variables and parameters are local)](chapter3.md#3.9-Variables-and-parameters-are-local)
+    0. [栈表](chapter3.md#3.10-Stack-diagrams)
     1. 返值函数与空值函数
     2. 为什么使用函数
     3. 用 `from` 导入

@@ -152,3 +152,95 @@ Python 有一个数学模块提供了几乎所有数学函数. __模块__是指�
 当运行到程序的末尾, 程序结束.
 
 这段无聊的故事的意义是什么? 当你读程序的时候, 你总是不希望从头读到尾. 有的时候, 如果你按照执行流读程序会更有意义.
+
+## <a name="3.8-Parameters-and-arguments"></a> 3.8 形式参数与实际参数
+
+我们看到的一些内置函数需要一些参数. 例如, 当你调用 math.sin 函数的时候, 你传入一个数字作为参数. 有一些函数需要更多的参数: math.pow 需要两个参数, 基数和指数.
+
+在函数内部, 参数被赋值给叫做 __形式参数(parameter)__ 的变量. 这是一个用户自定义有参函数:
+
+    def print_twice(bruce):
+        print bruce
+        print bruce
+
+这个函数将传入的参数将给名为 `bruce` 的形参. 当函数被调用的时候, 它打印形参的值两次. 这个函数能为任何能够被打印出来的值工作.
+
+    >>> print_twice('Spam')
+    Spam
+    Spam
+    >>> print_twice(17)
+    17
+    17
+    >>> print_twice(math.pi)
+    3.14159265359
+    3.14159265359
+
+对于内置函数的组合使用规则同样适用于用户自定义的函数, 所以我们能够利用任何类型的表达式作为 `print_twice` 函数的形参:
+
+    >>> print_twice('Spam '*4)
+    Spam Spam Spam Spam
+    Spam Spam Spam Spam
+    >>> print_twice(math.cos(math.pi))
+    -1.0
+    -1.0
+
+参数在函数调用执行之前会进行计算, 所以在上面的例子里, `'Span '*4` 和 `math.cos(math.pi)` 会被计算一次. 你也可以将变量作为一个参数:
+
+    >>> michael = 'Eric, the half a bee.'
+    >>> print_twice(michael)
+    Eric, the half a bee.
+    Eric, the half a bee.
+
+我们作为参数传入的变量名是 `michael` , 它没有对函数的形参名 `bruce` 做任何影响. 它不会影响传回的值. 在 `print_twice` 函数里, 任何传入的参数都称作 `bruce` .
+
+## <a name="3.9-Variables-and-parameters-are-local"></a> 3.9 变量与形参都是局部的
+
+当你在函数内部创建一个变量的时候, 这个变量是局部的, 也就是说它只存在于函数的内部.例如:
+
+    def cat_twice(part1, part2):
+        cat = part1 + part2
+        print_twice(cat)
+
+这个函数获取两个参数, 连接他们, 并且打印两次结果. 这是一个调用函数的例子:
+
+    >>> line1 = 'Bing tiddle '
+    >>> line2 = 'tiddle bang.'
+    >>> cat_twice(line1, line2)
+    Bing tiddle tiddle bang.
+    Bing tiddle tiddle bang.
+
+当 `cat_twice` 结束时, 变量 `cat` 也被销毁. 如果我们尝试 `print` 它, 会得到一个异常:
+
+    >>> print cat
+    NameError: name 'cat' is not defined
+
+![Stack diagram](../images/Stack-diagram.png)
+
+形参也是局部的, 例如在 `print_twice` 外并不存在 `bruce` 变量.
+
+## <a name="3.10-Stack-diagrams"></a> 3.10 栈表
+
+保持变量使用的记录, 有时候能够对画栈表有帮助. 例如状态表, 栈表都会显示每个变量的值, 同时他们也会显示变量所属的函数. 
+
+每个函数用一帧来表示. 一帧是一个含有函数名以及函数参数和变量的格子. 上个例子的栈表如 图3.1 所示.
+
+帧排列在栈中并表示哪个函数调用哪个函数. 在这个例子里, `print_twice` 被 `cat_twice` 调用, 而 `cat_twice` 被 `__main__` 调用. `__main__` 是在最顶的特殊帧. 
+
+当我们在所有函数外创建一个变量, 它属于 `__main__` . 每个指向相同值的参数作为对应的参数. 因此 `part1` 和 `line1` 有相同的值, `part2` 和 `line2` 有相同的值, 而 `bruce` 和 `cat` 有相同的值.
+
+如果在函数调用的过程中发生错误, Python 会打印出函数名和调用该函数的函数名, 并一直到 `__main__`.
+
+例如, 如果你尝试从 `print_twice` 访问 `cat` , 你会得到一个 `NameError`:
+
+    Traceback (innermost last):
+      File "test.py", line 13, in __main__
+        cat_twice(line1, line2)
+      File "test.py", line 5, in cat_twice
+        print_twice(cat)
+      File "test.py", line 9, in print_twice
+        print cat
+    NameError: name 'cat' is not defined
+
+这段信息被称为 `traceback` . 它告诉你哪个程序文件出现错误, 哪一行以及什么函数正在执行. 它同时会显示哪一行的代码因引起这个错误.
+
+`traceback` 中的函数显示顺序和栈表里帧的顺序是一致的. 那个函数现在是运行在底部的.
