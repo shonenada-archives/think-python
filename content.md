@@ -16,14 +16,14 @@ Think Python
     6. [调试](chapter1.md#1.6-Debugging)
     7. [术语表](chapter1.md#1.7-Glossary)
     8. [练习](chapter1.md#1.8-Exercises)
-  2. 变量、表达式、语句
-    1. 变量值与类型
-    2. 变量
-    3. 变量名与关键词
-    4. 操作符与运算符
-    5. 表达式与语句
-    6. 交互模式与脚本模式
-    7. 操作符的优先级
+  2. [变量、表达式、语句](chapter2.md#2-Variables-expressions-and-statements)
+    1. [变量值与类型](chapter2.md#2.1-Values and types)
+    2. [变量](chapter2.md#2.2-Variables)
+    3. [变量名与关键词](chapter2.md#2.3-Variable-names-and-keywords)
+    4. [操作符与运算符](chapter2.md#2.4-Operators-and-operands)
+    5. [表达式与语句](chapter2.md#2.5-Expressions-and-statements)
+    6. [交互模式与脚本模式](chapter2.md#2.6-Interactive-mode-and-script-mode)
+    7. [操作符的优先级](chapter2.md#2.7-Order-of-operations)
     8. 字符串操作
     9. 注释
     0. 调试

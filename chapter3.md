@@ -1,4 +1,4 @@
-# <a name="3-Functions"></a> 函数
+# <a name="3-Functions"></a> 第三章 函数
 
 ## <a name="3.1-Function-calls"></a> 3.1 函数调用
 
