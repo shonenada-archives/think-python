@@ -46,8 +46,8 @@ Think Python
     4. 调试
     5. 术语表
     6. 练习
-  4. 案例学习：接口设计
-    1. 乌龟的世界(Turtle World)
+  4. [案例学习：接口设计](chapter4.md#4-Case-study-interface-design)
+    1. [乌龟的世界(Turtle World)](chapter4.md#4.1-TurtleWorld)
     2. 简单的重复(Simple Repetition)
     3. 练习
     4. 封装
